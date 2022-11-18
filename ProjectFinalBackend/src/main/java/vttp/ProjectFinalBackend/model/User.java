@@ -1,17 +1,25 @@
 package vttp.ProjectFinalBackend.model;
 
 public class User {
-    private Long id;
+    private String userId;
     private String email;
     private String password;
     private String name;
+    private String role;
+    private String[] authorities;
 
-    
-    public Long getId() {
-        return id;
+      
+    public String[] getAuthorities() {
+        return authorities;
     }
-    public void setId(Long id) {
-        this.id = id;
+    public void setAuthorities(String[] authorities) {
+        this.authorities = authorities;
+    }
+    public String getUserId() {
+        return userId;
+    }
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
     public String getEmail() {
         return email;
@@ -30,5 +38,11 @@ public class User {
     }
     public void setName(String name) {
         this.name = name;
+    }
+    public String getRole() {
+        return role;
+    }
+    public void setRole(String role) {
+        this.role = role;
     }
 }
