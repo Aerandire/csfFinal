@@ -32,7 +32,7 @@ public class JWTTokenProvider {
 
     private Logger LOGGER = LoggerFactory.getLogger(getClass());
     
-    @Value("asdasdadcercewcCsWEWWEWCWEWJNWKJBWKEJBCWKJBKWBWHBJHWBECJEHBKW")
+    @Value("${jwt.secret}")
     private String secret;
     
     public String generateJwtToken(CustomUserDetails user) {

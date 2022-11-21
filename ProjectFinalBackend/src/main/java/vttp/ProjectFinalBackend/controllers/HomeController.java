@@ -56,6 +56,7 @@ public class HomeController extends ExceptionHandling{
 
     private HttpHeaders getJwtHeader(CustomUserDetails user) {
         HttpHeaders headers = new HttpHeaders();
+        //headers.add(SecurityConstant.JWT_TOKEN_HEADER, jwjTokProv.generateJwtToken(user));
         headers.add(SecurityConstant.JWT_TOKEN_HEADER, jwjTokProv.generateJwtToken(user));
         return headers;
     }
